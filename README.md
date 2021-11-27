@@ -58,6 +58,12 @@ OR
 
 ## Configuration flags
 
+`RELEASES_DIR` - where you cloned the repository, needed for telegram announcement images
+
+```
+You'll need to put your own images into assets folder in the repo. Check "Announcement images" section for more info.
+```
+
 `GITHUB_USER` - your GitHub username
 
 `GITHUB_EMAIL` - your GitHub email
@@ -73,6 +79,10 @@ OR
 `official` - `true` if you're building an official build, `false` if you're building an unofficial build
 
 `local_manifest_url` - your local manifest URL (e.g. `https://example.link/local_manifest.xml`)
+
+```
+Note that you'll need to comment this out or erase its content in order to use old school variables.
+```
 
 `manifest_url` - your ROM's manifest repo URL (e.g. `https://android.googlesource.com/platform/manifest`)
 
@@ -99,3 +109,33 @@ OR
 `release_repo` - your GitHub username + name of the repo to upload the releases (e.g. `JarlPenguin/releases`)
 
 `timezone` - your timezone (default: `UTC`)
+
+`devicetree` - your device tree / `devicepath` - destination path for it / `devicebranch` - branch of it
+
+`devicetreecommon` - your common device tree (and so on)
+
+`kerneltree` - your kernel tree (and so on)
+
+`vendortree` - your vendor tree (and so on)
+
+```
+Until a proper implementation is done, you have to omit the git commands in sync.sh that have the variables you commented out in config.
+```
+
+## Announcement images
+
+In November 27, 2021, [I, as Bedirhan, have introduced image additions in announcement messages.](https://github.com/windowz414/releases/commit/4a7733f71c12136d2f5e9d5f4456fdc02363c8b2).
+
+These images are placed inside assets folder and messages they're used are as follows;
+
+`sync1.png` - "Sync started for ROM"
+
+`sync2.png` - "Sync failed in x minute(s) and y second(s)"
+
+`sync3.png` - "Sync completed successfully in x minute(s) and y second(s)"
+
+`build1.png` - "Build started for device"
+
+`build2.png` - "Build failed in x minute(s) and y second(s)"
+
+`build3.png` - "Build completed successfully in x minute(s) and y second(s)"
