@@ -9,6 +9,7 @@ else
     telegram -M "Build started for ${device}"
 fi
 source build/envsetup.sh
+export LC_ALL="C"
 source "${my_dir}/config.sh"
 if [ "${official}" == "true" ]; then
     export CUSTOM_BUILD_TYPE="OFFICIAL"

@@ -16,7 +16,9 @@ cores=$(nproc --all)
 if [ "${cores}" -gt "8" ]; then
     cores=8
 fi
+rm -rf "${WORKSPACE}/prebuilts/maven_repo/bumptech"
 repo sync --force-sync --fail-fast --no-tags --no-clone-bundle --optimized-fetch --prune "-j${cores}" -c -v
+#git clone https://android.googlesource.com/platform/prebuilts/maven_repo/bumptech -b android-9.0.0_r46 prebuilts/maven_repo/bumptech
 syncsuccessful="${?}"
 SYNC_END=$(date +"%s")
 SYNC_DIFF=$((SYNC_END - SYNC_START))
