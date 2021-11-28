@@ -86,6 +86,12 @@ Note that you'll need to comment this out or erase its content in order to use o
 
 `manifest_url` - your ROM's manifest repo URL (e.g. `https://android.googlesource.com/platform/manifest`)
 
+`referencedir` - the directory that will be taken as reference while syncing
+
+```
+Keep in mind, not all ROMs use the same remote under same name. For example, if the target ROM is using laos but reference is using lineage as remote name, all repos from that remote will be kept back.
+```
+
 `rom_vendor_name` - your ROM's custom vendor name (e.g. `lineage`)
 
 `branch` - branch of the manifest to sync (e.g. `lineage-16.0`)
