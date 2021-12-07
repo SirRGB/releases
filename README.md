@@ -28,9 +28,7 @@
 
 6. Then run `init.sh` from the same folder.
 
-OR
-
-5. If you've already built Android on your PC, run `init.sh`.
+7. If you've already built Android on your PC, install `haste` using `gem install haste`
 
 ## How to use this repo (Jenkins)
 
@@ -54,7 +52,7 @@ OR
 
 * `TELEGRAM_TOKEN` - the token of your Telegram Bot.
 
-8. Edit the `git clone` command for your fork.
+8. Switch to the root user and install the binaries in the `bin` folder to `/usr/bin` and install `haste` using `gem install haste`.
 
 ## Configuration flags
 
@@ -67,6 +65,12 @@ You'll need to put your own images into assets folder in the repo. Check "Announ
 `GITHUB_USER` - your GitHub username
 
 `GITHUB_EMAIL` - your GitHub email
+
+`HASTE_SERVER` - Hastebin server build logs will be provided through
+
+```
+You need to have haste installed in order to provide logs. Revert the commits towards this on your fork if you don't want to use it.
+```
 
 `device` - your device codename (e.g. `blueline` for Pixel 3)
 
@@ -116,17 +120,6 @@ Keep in mind, not all ROMs use the same remote under same name. For example, if 
 
 `timezone` - your timezone (default: `UTC`)
 
-`devicetree` - your device tree / `devicepath` - destination path for it / `devicebranch` - branch of it
-
-`devicetreecommon` - your common device tree (and so on)
-
-`kerneltree` - your kernel tree (and so on)
-
-`vendortree` - your vendor tree (and so on)
-
-```
-Until a proper implementation is done, you have to omit the git commands in sync.sh that have the variables you commented out in config.
-```
 
 ## Announcement images
 
