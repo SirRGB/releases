@@ -43,8 +43,12 @@ buildsuccessful="${?}"
 =======
 (( cores = $(nproc --all) * 2 ))
 export cores
+<<<<<<< HEAD
 make "${bacon}" -j${cores}
 >>>>>>> 4a7733f... Add plenty of features
+=======
+make "${bacon}" -j${cores} | tee log.txt
+>>>>>>> 46fcc27... Use haste for pasting logs to a hastebin service
 BUILD_END=$(date +"%s")
 BUILD_DIFF=$((BUILD_END - BUILD_START))
 
@@ -94,7 +98,7 @@ Date: $(env TZ="${timezone}" date)" "${finalzip_path}"
 Date: $(env TZ="${timezone}" date)" "${incremental_zip_path}"
         elif [ ! -e "${incremental_zip_path}" ] && [ "${old_target_files_exists}" == "true" ]; then
             echo "Build failed in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds"
-            telegram -i ${RELEASES_DIR}/assets/build2.png -N -M "Build failed in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds"
+            telegram -i ${RELEASES_DIR}/assets/build2.png -N -M "Build failed in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds - [See logs] ($(haste log.txt))"
             curl --data parse_mode=HTML --data chat_id=$TELEGRAM_CHAT --data sticker=CAADBQADGgEAAixuhBPbSa3YLUZ8DBYE --request POST https://api.telegram.org/bot$TELEGRAM_TOKEN/sendSticker
             exit 1
         fi
@@ -106,7 +110,7 @@ Date: $(env TZ="${timezone}" date)" "${incremental_zip_path}"
 Date: $(env TZ="${timezone}" date)" "${img_path}"
         else
             echo "Build failed in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds"
-            telegram -i ${RELEASES_DIR}/assets/build2.png -N -M "Build failed in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds"
+            telegram -i ${RELEASES_DIR}/assets/build2.png -N -M "Build failed in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds - [See logs]($(haste log.txt))"
             curl --data parse_mode=HTML --data chat_id=$TELEGRAM_CHAT --data sticker=CAADBQADGgEAAixuhBPbSa3YLUZ8DBYE --request POST https://api.telegram.org/bot$TELEGRAM_TOKEN/sendSticker
             exit 1
         fi
@@ -135,20 +139,14 @@ Download incremental update: ["incremental_ota_update.zip"]("https://github.com/
         else
             telegram -i ${RELEASES_DIR}/assets/build3.png -M "Build completed successfully in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds
 
-<<<<<<< HEAD
 Download: ["${zip_name}"]("https://github.com/${release_repo}/releases/download/${tag}/${zip_name}")"
-=======
-Download: ["${zip_name}"]("https://github.com/${release_repo}/releases/download/${tag}/${zip_name}")
-
-Download from owZ' Builds: ["${zip_name}"]("https://dl.ayokaacr.de/5:/${zip_name}")"
->>>>>>> 4a7733f... Add plenty of features
         fi
     fi
 curl --data parse_mode=HTML --data chat_id=$TELEGRAM_CHAT --data sticker=CAADBQADGgEAAixuhBPbSa3YLUZ8DBYE --request POST https://api.telegram.org/bot$TELEGRAM_TOKEN/sendSticker
 
 else
     echo "Build failed in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds"
-    telegram -i ${RELEASES_DIR}/assets/build2.png -N -M "Build failed in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds"
+    telegram -i ${RELEASES_DIR}/assets/build2.png -N -M "Build failed in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds - [See logs]($(haste log.txt))"
     curl --data parse_mode=HTML --data chat_id=$TELEGRAM_CHAT --data sticker=CAADBQADGgEAAixuhBPbSa3YLUZ8DBYE --request POST https://api.telegram.org/bot$TELEGRAM_TOKEN/sendSticker
     exit 1
 fi
