@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export outdir="${ROM_DIR}/out/target/product/${device}"
-BUILD_START=$(date +"%s")
+export BUILD_START=$(date +"%s")
 echo "Build started for ${device}"
 if [ "${jenkins}" == "true" ]; then
     telegram -M "Build ${BUILD_DISPLAY_NAME} started for ${device}: [See Progress](${BUILD_URL}console)"
@@ -108,6 +108,10 @@ Date: $(env TZ="${timezone}" date)" "${img_path}"
 Download: ["${tag}"]("https://github.com/${release_repo}/releases/tag/${tag}")"
 
     curl --data parse_mode=HTML --data chat_id=$TELEGRAM_CHAT --data sticker=CAADBQADGgEAAixuhBPbSa3YLUZ8DBYE --request POST https://api.telegram.org/bot$TELEGRAM_TOKEN/sendSticker
+
+if [ "${ota_info}" == "true" ]; then
+    source "${my_dir}/ota_config.sh"
+fi
 
 else
     echo "Build failed in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds"
