@@ -29,3 +29,4 @@ export timezone="UTC"
 
 export sign="true"
 export local_manifest_priv_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/priv/certs.xml"
+export ota_info="true"
