@@ -2,6 +2,7 @@
 
 export outdir="${ROM_DIR}/out/target/product/${device}"
 BUILD_START=$(date +"%s")
+export BUILD_START="$(date +"%s")"
 echo "Build started for ${device}"
 if [ "${jenkins}" == "true" ]; then
     telegram -M "Build ${BUILD_DISPLAY_NAME} started for ${device}: [See Progress](${BUILD_URL}console)"
@@ -71,9 +72,7 @@ export zip_name=$(echo "${finalzip_path}" | sed "s|${outdir}/||")
 export tag=$( echo "$(date +%Y%m%d%H%M)-${zip_name}" | sed 's|.zip||')
 if [ "${buildsuccessful}" == "0" ] && [ ! -z "${finalzip_path}" ]; then
     echo "Build completed successfully in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds"
-
     echo "Uploading"
-
     github-release "${release_repo}" "${tag}" "master" "${ROM} for ${device}
 
 Date: $(env TZ="${timezone}" date)" "${finalzip_path}"
@@ -129,6 +128,8 @@ Download: ["${zip_name}"]("https://github.com/${release_repo}/releases/download/
         fi
     fi
 curl --data parse_mode=HTML --data chat_id=$TELEGRAM_CHAT --data sticker=CAADBQADGgEAAixuhBPbSa3YLUZ8DBYE --request POST https://api.telegram.org/bot$TELEGRAM_TOKEN/sendSticker
+
+source "${my_dir}/ota_config.sh"
 
 else
     echo "Build failed in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds"
