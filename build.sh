@@ -109,6 +109,10 @@ Download: ["${tag}"]("https://github.com/${release_repo}/releases/tag/${tag}")"
 
     curl --data parse_mode=HTML --data chat_id=$TELEGRAM_CHAT --data sticker=CAADBQADGgEAAixuhBPbSa3YLUZ8DBYE --request POST https://api.telegram.org/bot$TELEGRAM_TOKEN/sendSticker
 
+rm -rf "${ROM_DIR}/createjson.sh"
+mv "${my_dir}/createjson.sh" "${ROM_DIR}"
+source "${ROM_DIR}/createjson.sh"
+
 else
     echo "Build failed in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds"
     telegram -N -M "Build failed in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds"
