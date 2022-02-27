@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 export outdir="${ROM_DIR}/out/target/product/${device}"
@@ -8,7 +9,16 @@ if [ "${jenkins}" == "true" ]; then
 else
     telegram -M "Build started for ${device}"
 fi
+
 source build/envsetup.sh
+
+# minimize debug
+#repopick -t tm-minimize-debug
+
+# face unlock
+#repopick -t tm-oss-face-unlock
+
+
 source "${my_dir}/config.sh"
 if [ -z "${buildtype}" ]; then
     export buildtype="userdebug"
