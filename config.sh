@@ -7,7 +7,7 @@ export device="cheeseburger"
 
 export ROM="crDroid"
 export ROM_DIR="${WORKSPACE}/../Crd11"
-export ROM_VERSION="7.15"
+export ROM_VERSION="7.16"
 export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/cheeseburgerdumpling/A11Crdroid3.xml"
 export manifest_url="https://github.com/crdroidandroid/android"
 export rom_vendor_name="lineage"
