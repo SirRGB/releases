@@ -10,6 +10,7 @@ rm -rf .repo/local_manifests
 mkdir -p .repo/local_manifests
 wget "${local_manifest_url}" -O .repo/local_manifests/manifest.xml
 repo init -u "${manifest_url}" -b "${branch}" --depth 1
+repo init -u "${manifest_url}" -b "${branch}" --depth 1 --reference "${WORKSPACE}/../Min10"
 cores=$(nproc --all)
 if [ "${cores}" -gt "8" ]; then
     cores=8
