@@ -3,9 +3,9 @@
 export GITHUB_USER="SirRGB"
 export GITHUB_EMAIL="liam_wagner@gmx.de"
 
-export device="TP1803"
+export device="cedric"
 
-export ROM="Project Kasumi"
+export ROM="CarbonROM"
 export ROM_DIR="${WORKSPACE}/../Crb10"
 export ROM_VERSION="8.0"
 export official="false"
