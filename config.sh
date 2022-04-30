@@ -1,28 +1,28 @@
 #!/bin/bash
 
-export GITHUB_USER=""
-export GITHUB_EMAIL=""
+export GITHUB_USER="SirRGB"
+export GITHUB_EMAIL="sirrgb@proton.me"
 
-export device=""
+export device="griffin"
 
-export ROM=""
-export ROM_DIR=""
-export ROM_VERSION=""
-export local_manifest_url=""
-export manifest_url=""
-export rom_vendor_name=""
-export branch=""
+export ROM="crDroid"
+export ROM_DIR="${WORKSPACE}/../Crd10"
+export ROM_VERSION="6"
+export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/griffin/A10Lineage2.xml"
+export manifest_url="https://github.com/crDroid-Revived/android"
+export rom_vendor_name="lineage"
+export branch="10.0"
 export bacon="bacon"
-export buildtype=""
-export clean=""
-export generate_incremental=""
-export upload_recovery=""
+export buildtype="user"
+export clean="installclean"
+export generate_incremental="false"
+export upload_recovery="true"
 
-export ccache=""
+export ccache="false"
 export ccache_size=""
 
 export jenkins="false"
 
-export release_repo=""
+export release_repo="SirRGB/releases"
 
 export timezone="UTC"
