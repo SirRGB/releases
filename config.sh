@@ -3,13 +3,13 @@
 export GITHUB_USER="SirRGB"
 export GITHUB_EMAIL="sirrgb@amyrom.ml"
 
-export device="hammerhead"
+export device="flounder"
 
 export ROM="LineageOS"
 export ROM_DIR="${WORKSPACE}/../Los9"
 export ROM_VERSION="16.0"
 export official="false"
-export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/hammerhead/A9Lineage3.xml"
+export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/flounder/A9Lineage2.xml"
 export manifest_url="https://github.com/LineageOS/android"
 export rom_vendor_name="lineage"
 export branch="lineage-16.0"
