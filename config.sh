@@ -5,11 +5,11 @@ export GITHUB_EMAIL="sirrgb@amyrom.ml"
 
 export device="cedric"
 
-export ROM="crDroid"
+export ROM="crDroid gapps"
 export ROM_DIR="${WORKSPACE}/../Crd10"
 export ROM_VERSION="6.27"
 export official="false"
-export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/cedric/A10crDroid.xml"
+export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/cedric/A10crDroidG.xml"
 export manifest_url="https://github.com/crdroidandroid/android"
 export rom_vendor_name="lineage"
 export branch="10.0"
