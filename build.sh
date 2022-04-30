@@ -11,7 +11,7 @@ fi
 source build/envsetup.sh
 source "${my_dir}/config.sh"
 if [ "${official}" == "true" ]; then
-    export CUSTOM_BUILD_TYPE="OFFICIAL"
+    export AMY_BUILDTYPE="OFFICIAL"
 fi
 if [ -z "${buildtype}" ]; then
     export buildtype="userdebug"
