@@ -10,6 +10,12 @@ else
 fi
 source build/envsetup.sh
 source "${my_dir}/config.sh"
+if [ "${ccache}" == "false" ]; then
+  echo "DEBUG CCACHE DISABLE BY SCRIPT"
+  unset USE_CCACHE
+  unset CCACHE_DIR
+  unset CCACHE_EXEC
+fi
 if [ "${ccache}" == "true" ] && [ -n "${ccache_size}" ]; then
     export USE_CCACHE=1
     ccache -M "${ccache_size}G"
