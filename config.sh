@@ -1,29 +1,29 @@
 #!/bin/bash
 
-export GITHUB_USER=""
-export GITHUB_EMAIL=""
+export GITHUB_USER="SirRGB"
+export GITHUB_EMAIL="sirrgb@amyrom.ml"
 
-export device=""
+export device="cedric"
 
-export ROM=""
-export ROM_DIR=""
-export ROM_VERSION=""
+export ROM="crDroid"
+export ROM_DIR="${WORKSPACE}/../Crd12"
+export ROM_VERSION="8"
 export official="false"
-export local_manifest_url=""
-export manifest_url=""
-export rom_vendor_name=""
-export branch=""
+export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/cedric/A12Crdroid.xml"
+export manifest_url="https://github.com/crdroidandroid/android"
+export rom_vendor_name="lineage"
+export branch="12.1"
 export bacon="bacon"
-export buildtype=""
-export clean=""
-export generate_incremental=""
-export upload_recovery=""
+export buildtype="user"
+export clean="installclean"
+export generate_incremental="false"
+export upload_recovery="false"
 
-export ccache=""
+export ccache="false"
 export ccache_size=""
 
 export jenkins="false"
 
-export release_repo=""
+export release_repo="SirRGB/releases"
 
 export timezone="UTC"
