@@ -10,18 +10,16 @@ else
 fi
 source build/envsetup.sh
 source "${my_dir}/config.sh"
-if [ "${ccache}" == "false" ]; then
-  echo "DEBUG CCACHE DISABLE BY SCRIPT"
-  unset USE_CCACHE
-  unset CCACHE_DIR
-  unset CCACHE_EXEC
-fi
 if [ "${ccache}" == "true" ] && [ -n "${ccache_size}" ]; then
     export USE_CCACHE=1
     ccache -M "${ccache_size}G"
 elif [ "${ccache}" == "true" ] && [ -z "${ccache_size}" ]; then
     echo "Please set the ccache_size variable in your config."
     exit 1
+else
+  unset USE_CCACHE
+  unset CCACHE_DIR
+  unset CCACHE_EXEC
 fi
 export ALLOW_MISSING_DEPENDENCIES=true
 export LC_ALL=C
