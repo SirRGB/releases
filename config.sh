@@ -7,7 +7,7 @@ export device="cedric"
 
 export ROM="crDroid"
 export ROM_DIR="${WORKSPACE}/../Crd10"
-export ROM_VERSION="6.27"
+export ROM_VERSION="6"
 export official="false"
 export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/cedric/A10crDroid.xml"
 export manifest_url="https://github.com/crDroid-Revived/android"
