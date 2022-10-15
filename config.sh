@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export GITHUB_USER="SirRGB"
-export GITHUB_EMAIL="sirrgb@amyrom.ml"
+export GITHUB_EMAIL="sirrgb@proton.me"
 
 export device="cedric"
 
@@ -10,7 +10,7 @@ export ROM_DIR="${WORKSPACE}/../Crd10"
 export ROM_VERSION="6.27"
 export official="false"
 export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/cedric/A10crDroid.xml"
-export manifest_url="https://github.com/crdroidandroid/android"
+export manifest_url="https://github.com/crDroid-Revived/android"
 export rom_vendor_name="lineage"
 export branch="10.0"
 export bacon="bacon"
@@ -22,7 +22,7 @@ export upload_recovery="false"
 export ccache="false"
 export ccache_size=""
 
-export jenkins="true"
+export jenkins="false"
 
 export release_repo="SirRGB/releases"
 
