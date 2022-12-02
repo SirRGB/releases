@@ -30,14 +30,14 @@ else
     lunch "${device}-${buildtype}"
 fi
 if [ "${clean}" == "clean" ]; then
-    m clean -j$((nproc --all / 2))
+    m clean -j$(nproc --all)
 elif [ "${clean}" == "installclean" ]; then
-    m installclean -j$((nproc --all / 2))
+    m installclean -j$(nproc --all)
     rm -rf out/target/product/"${device}"/obj/DTBO_OBJ
 else
     rm "${outdir}"/*$(date +%Y)*.zip*
 fi
-m "${bacon}" -j$((nproc --all / 2)) | tee log.txt
+m "${bacon}" -j$(nproc --all)
 buildsuccessful="${?}"
 BUILD_END=$(date +"%s")
 BUILD_DIFF=$((BUILD_END - BUILD_START))
