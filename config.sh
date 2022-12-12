@@ -3,7 +3,7 @@
 export GITHUB_USER="SirRGB"
 export GITHUB_EMAIL="sirrgb@proton.me"
 
-export device="a5y17lte"
+export device="a7y17lte"
 
 export ROM="Lineage OS"
 export ROM_DIR="${WORKSPACE}/../Los12"
