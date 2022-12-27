@@ -21,6 +21,8 @@ recovery="" #https link (leave empty if unused)
 paypal="" #https link (leave empty if unused)
 telegram="https://t.me/rgb_roms" #https link (leave empty if unused)
 
+upload="https://github.com/${release_repo}/releases/download/${tag}/${zip_name}"
+
 #don't modify from here
 script_path="${ROM_DIR}"
 zip_name=$script_path/out/target/product/$device/$zip
@@ -48,7 +50,7 @@ echo '{
         "oem": "'$oem'",
         "device": "'$devicename'",
         "filename": "'$zip_only'",
-        "download": "https://sourceforge.net/projects/sirrgb-roms/files/pdx203/CrDroid/'$zip_only'/download",
+        "download": "'$upload'",
         "timestamp": '$timestamp',
         "md5": "'$md5'",
         "size": '$size',
