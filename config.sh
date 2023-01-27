@@ -3,13 +3,13 @@
 export GITHUB_USER="SirRGB"
 export GITHUB_EMAIL="sirrgb@proton.me"
 
-export device="griffin"
+export device="cedric"
 
 export ROM="AICP"
 export ROM_DIR="${WORKSPACE}/../Aic11"
 export ROM_VERSION="11"
 export official="false"
-export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/griffin/A11Aicp.xml"
+export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/cedric/A11Aicp.xml"
 export manifest_url="https://github.com/AICP-Revived/platform_manifest"
 export rom_vendor_name="aicp"
 export branch="r11.1"
