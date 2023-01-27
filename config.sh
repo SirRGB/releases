@@ -3,13 +3,13 @@
 export GITHUB_USER="SirRGB"
 export GITHUB_EMAIL="sirrgb@proton.me"
 
-export device="cedric"
+export device="cheeseburger"
 
 export ROM="RR-Rev"
 export ROM_DIR="${WORKSPACE}/../RR10"
 export ROM_VERSION="Q"
 export official="false"
-export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/cedric/A10RR.xml"
+export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/cheeseburgerdumpling/A10RR.xml"
 export manifest_url="https://github.com/ResurrectionRemix-Revived/manifest.git"
 export rom_vendor_name="rr"
 export branch="Q"
