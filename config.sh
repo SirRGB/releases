@@ -1,29 +1,29 @@
 #!/bin/bash
 
-export GITHUB_USER=""
-export GITHUB_EMAIL=""
+export GITHUB_USER="SirRGB"
+export GITHUB_EMAIL="sirrgb@proton.me"
 
-export device=""
+export device="griffin"
 
-export ROM=""
-export ROM_DIR=""
-export ROM_VERSION=""
+export ROM="AICP"
+export ROM_DIR="${WORKSPACE}/../Aic11"
+export ROM_VERSION="11"
 export official="false"
-export local_manifest_url=""
-export manifest_url=""
-export rom_vendor_name=""
-export branch=""
+export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/griffin/A11Aicp.xml"
+export manifest_url="https://github.com/AICP-Revived/platform_manifest"
+export rom_vendor_name="aicp"
+export branch="r11.1"
 export bacon="bacon"
-export buildtype=""
-export clean=""
-export generate_incremental=""
-export upload_recovery=""
+export buildtype="user"
+export clean="installclean"
+export generate_incremental="false"
+export upload_recovery="false"
 
-export ccache=""
+export ccache="false"
 export ccache_size=""
 
 export jenkins="false"
 
-export release_repo=""
+export release_repo="SirRGB/releases"
 
 export timezone="UTC"
