@@ -12,14 +12,14 @@ device="pdx203" #ex: guacamole
 devicename="Xperia 1 II" #ex: OnePlus 7 Pro
 zip="${zip_name}" #ex: crDroidAndroid-<android version>-<date>-<device codename>-v<crdroid version>.zip
 buildtype="Monthly" #choose from Testing/Alpha/Beta/Weekly/Monthly
-forum="https://t.me/rgb_chat" #https link (mandatory)
+forum="https://forum.xda-developers.com/t/rom-12-1-crdroid-8-13-for-pdx203-unofficial-20jan.4541067/" #https link (mandatory)
 gapps="http://downloads.codefi.re/jdcteam/javelinanddart/gapps/" #https link (leave empty if unused)
 firmware="" #https link (leave empty if unused)
 modem="" #https link (leave empty if unused)
 bootloader="" #https link (leave empty if unused)
 recovery="" #https link (leave empty if unused)
 paypal="" #https link (leave empty if unused)
-telegram="https://t.me/rgb_roms" #https link (leave empty if unused)
+telegram="https://t.me/+fYPeVvpVyIcyNzBi" #https link (leave empty if unused)
 
 upload="https://github.com/${release_repo}/releases/download/${tag}/${zip_name}"
 
