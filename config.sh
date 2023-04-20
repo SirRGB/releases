@@ -3,12 +3,12 @@
 export GITHUB_USER="SirRGB"
 export GITHUB_EMAIL="sirrgb@proton.me"
 
-export device="pdx203"
+export device="cheeseburger"
 
 export ROM="Leaf OS"
 export ROM_DIR="${WORKSPACE}/../Lfp13"
 export ROM_VERSION="2"
-export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/pdx203/A13Leaf.xml"
+export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/cheeseburgerdumpling/A13Leaf.xml"
 export manifest_url="https://github.com/LeafOS-Project/android"
 export rom_vendor_name=""
 export branch="leaf-2.0"
