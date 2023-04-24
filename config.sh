@@ -17,7 +17,6 @@ export buildtype="user"
 export clean="installclean"
 export generate_incremental="false"
 export upload_recovery="true"
-export WITH_GMS="true"
 
 export ccache="false"
 export ccache_size=""
