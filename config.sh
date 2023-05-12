@@ -3,12 +3,12 @@
 export GITHUB_USER="SirRGB"
 export GITHUB_EMAIL="sirrgb@proton.me"
 
-export device="cheeseburger"
+export device="akari"
 
 export ROM="crDroid"
 export ROM_DIR="${WORKSPACE}/../Crd13"
 export ROM_VERSION="9"
-export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/cheeseburgerdumpling/A13crDroid.xml"
+export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/tama/A13Lineage2.xml"
 export manifest_url="https://github.com/crdroidandroid/android"
 export rom_vendor_name="lineage"
 export branch="13.0"
