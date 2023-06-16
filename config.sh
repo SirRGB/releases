@@ -3,13 +3,13 @@
 export GITHUB_USER="SirRGB"
 export GITHUB_EMAIL="sirrgb@proton.me"
 
-export device="cedric"
+export device="j7elte"
 
 export ROM="crDroid"
 export ROM_DIR="${WORKSPACE}/../Crd10"
 export ROM_VERSION="6"
 export official="false"
-export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/cedric/A10crDroid.xml"
+export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/j7elte/A10Lineage.xml"
 export manifest_url="https://github.com/crDroid-Revived/android"
 export rom_vendor_name="lineage"
 export branch="10.0"
