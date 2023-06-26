@@ -17,6 +17,7 @@ export buildtype="user"
 export clean="installclean"
 export generate_incremental="false"
 export upload_recovery="true"
+export TARGET_RO_FILE_SYSTEM_TYPE="erofs"
 
 export ccache="false"
 export ccache_size=""
