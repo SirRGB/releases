@@ -10,12 +10,6 @@ else
 fi
 source build/envsetup.sh
 source "${my_dir}/config.sh"
-
-# Set up ksu
-cd kernel/oneplus/msm8998
-curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
-cd ../../..
-
 if [ "${official}" == "true" ]; then
     export CUSTOM_BUILD_TYPE="OFFICIAL"
 fi
