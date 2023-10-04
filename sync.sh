@@ -6,11 +6,17 @@ else
     telegram -M "Sync started for [${ROM} ${ROM_VERSION}](${manifest_url}/tree/${branch})"
 fi
 SYNC_START=$(date +"%s")
-rm -rf .repo/local_manifests
-mkdir -p .repo/local_manifests
-wget "${local_manifest_url}" -O .repo/local_manifests/manifest.xml
+if [ "${official}" != "true" ]; then
+    rm -rf .repo/local_manifests
+    mkdir -p .repo/local_manifests
+    wget "${local_manifest_url}" -O .repo/local_manifests/manifest.xml
+fi
 repo init -u "${manifest_url}" -b "${branch}" --depth 1 --git-lfs
-repo sync --force-sync --fail-fast --no-tags --no-clone-bundle --optimized-fetch --prune -c -v
+cores=$(nproc --all)
+if [ "${cores}" -gt "8" ]; then
+    cores=8
+fi
+repo sync --force-sync --fail-fast --no-tags --no-clone-bundle --optimized-fetch --prune "-j${cores}" -c -v
 syncsuccessful="${?}"
 SYNC_END=$(date +"%s")
 SYNC_DIFF=$((SYNC_END - SYNC_START))
