@@ -7,19 +7,19 @@ CR_VERSION="${ROM_VERSION}"
 
 date="$(date +"%Y%m%d")"
 maintainer="SirRGB" #ex: Lup Gabriel (gwolfu)
-oem="OnePlus" #ex: OnePlus
-device="cheeseburger" #ex: guacamole
-devicename="OnePlus 5" #ex: OnePlus 7 Pro
+oem="Sony" #ex: OnePlus
+device="poplar" #ex: guacamole
+devicename="Sony Xperia XZ1" #ex: OnePlus 7 Pro
 zip="${zip_name}" #ex: crDroidAndroid-<android version>-<date>-<device codename>-v<crdroid version>.zip
 buildtype="Monthly" #choose from Testing/Alpha/Beta/Weekly/Monthly
-forum="https://t.me/OP5T_flos_crdroid_updates" #https link (mandatory)
+forum="https://t.me/rgb_chat" #https link (mandatory)
 gapps="http://downloads.codefi.re/jdcteam/javelinanddart/gapps/" #https link (leave empty if unused)
-firmware="https://sourceforge.net/projects/crdroid/files/cheeseburger/6.x/firmware/firmware_10.0.1_oneplus5.zip/download" #https link (leave empty if unused)
+firmware="" #https link (leave empty if unused)
 modem="" #https link (leave empty if unused)
 bootloader="" #https link (leave empty if unused)
 recovery="" #https link (leave empty if unused)
 paypal="" #https link (leave empty if unused)
-telegram="https://t.me/OP5T_flos_crdroid_updates" #https link (leave empty if unused)
+telegram="https://t.me/rgb_roms" #https link (leave empty if unused)
 
 upload="https://github.com/${release_repo}/releases/download/${tag}/${zip_name}"
 
