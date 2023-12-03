@@ -3,7 +3,7 @@
 export GITHUB_USER="SirRGB"
 export GITHUB_EMAIL="sirrgb@proton.me"
 
-export device="akatsuki"
+export device="xz2c"
 
 export ROM="crDroid"
 export ROM_DIR="${WORKSPACE}/../Crd13"
