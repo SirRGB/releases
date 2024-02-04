@@ -7,21 +7,21 @@ CR_VERSION="${ROM_VERSION}"
 
 date="$(date +"%Y%m%d")"
 maintainer="SirRGB" #ex: Lup Gabriel (gwolfu)
-oem="OnePlus" #ex: OnePlus
-device="cheeseburger" #ex: guacamole
-devicename="OnePlus 5" #ex: OnePlus 7 Pro
+oem="Sony" #ex: OnePlus
+device="yoshino" #ex: guacamole
+devicename="Xperia XZ1" #ex: OnePlus 7 Pro
 zip="${zip_name}" #ex: crDroidAndroid-<android version>-<date>-<device codename>-v<crdroid version>.zip
 buildtype="Monthly" #choose from Testing/Alpha/Beta/Weekly/Monthly
-forum="https://t.me/OP5T_flos_crdroid_updates" #https link (mandatory)
+forum="https://t.me/xz1Community" #https link (mandatory)
 gapps="https://github.com/MindTheGapps/14.0.0-arm64/releases/latest" #https link (leave empty if unused)
-firmware="https://sourceforge.net/projects/crdroid/files/cheeseburger/6.x/firmware/firmware_10.0.1_oneplus5.zip/download" #https link (leave empty if unused)
+firmware="" #https link (leave empty if unused)
 modem="" #https link (leave empty if unused)
 bootloader="" #https link (leave empty if unused)
-recovery="https://sourceforge.net/projects/op5-5t/files/Android-12/TWRP/" #https link (leave empty if unused)
+recovery="https://dl.twrp.me/poplar/" #https link (leave empty if unused)
 paypal="https://www.paypal.com/donate/?hosted_button_id=9C79NMF2T3366" #https link (leave empty if unused)
-telegram="https://t.me/OP5T_flos_crdroid_updates" #https link (leave empty if unused)
+telegram="" #https link (leave empty if unused)
 
-upload="https://github.com/${release_repo}/releases/download/${tag}/${zip_name}"
+upload="https://github.com/${release_repo}/releases/tag/${tag}"
 
 #don't modify from here
 script_path="${ROM_DIR}"

@@ -3,12 +3,12 @@
 export GITHUB_USER="SirRGB"
 export GITHUB_EMAIL="sirrgb@proton.me"
 
-export device="cheeseburger"
+export device="poplar"
 
 export ROM="crDroid"
 export ROM_DIR="${WORKSPACE}/../Crd14"
 export ROM_VERSION="10"
-export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/cheeseburgerdumpling/A14crDroid.xml"
+export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/yoshino/A14crDroid.xml"
 export manifest_url="https://github.com/crdroidandroid/android"
 export rom_vendor_name="lineage"
 export branch="14.0"
