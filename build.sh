@@ -25,7 +25,7 @@ else
   unset CCACHE_EXEC
 fi
 if [ ! -z "${rom_vendor_name}" ]; then
-    lunch "${rom_vendor_name}_${device}-${buildtype}"
+    lunch "${rom_vendor_name}_${device}-${aosp_release}-${buildtype}"
 else
     lunch "${device}-${buildtype}"
 fi
