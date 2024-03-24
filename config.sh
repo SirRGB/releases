@@ -3,12 +3,12 @@
 export GITHUB_USER="SirRGB"
 export GITHUB_EMAIL="sirrgb@proton.me"
 
-export device="cedric"
+export device="cheeseburger"
 
 export ROM="Lineage OS"
 export ROM_DIR="${WORKSPACE}/../Los14"
 export ROM_VERSION="21"
-export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/cedric/A14Lineage.xml"
+export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/cheeseburgerdumpling/A14Lineage.xml"
 export manifest_url="https://github.com/droid-legacy/android"
 export rom_vendor_name="lineage"
 export branch="lineage-21.0"
