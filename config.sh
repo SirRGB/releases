@@ -12,7 +12,6 @@ export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manife
 export manifest_url="https://github.com/droid-legacy/android"
 export rom_vendor_name="lineage"
 export branch="lineage-21.0"
-export aosp_release="ap1a"
 export bacon="bacon"
 export buildtype="userdebug"
 export clean="installclean"
