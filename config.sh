@@ -3,12 +3,12 @@
 export GITHUB_USER="SirRGB"
 export GITHUB_EMAIL="sirrgb@proton.me"
 
-export device="flounder"
+export device="kminilte"
 
 export ROM="Lineage OS"
 export ROM_DIR="${WORKSPACE}/../Los10"
 export ROM_VERSION="17.1"
-export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/flounder/A10Lineage2.xml"
+export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/kminilte/A10Lineage2.xml"
 export manifest_url="https://github.com/LineageOS-Revived/android"
 export rom_vendor_name="lineage"
 export branch="lineage-17.1"
