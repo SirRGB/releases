@@ -9,6 +9,9 @@ SYNC_START=$(date +"%s")
 rm -rf .repo/local_manifests
 mkdir -p .repo/local_manifests
 wget "${local_manifest_url}" -O .repo/local_manifests/manifest.xml
+if [ "${sign}" == "true" ]; then
+    wget "${local_manifest_priv_url}" -O .repo/local_manifests/certs.xml
+fi
 repo init -u "${manifest_url}" -b "${branch}" --depth 1 --git-lfs
 repo sync --force-sync --fail-fast --no-tags --no-clone-bundle --optimized-fetch --prune -c -v
 syncsuccessful="${?}"
