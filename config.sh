@@ -25,7 +25,7 @@ export jenkins="false"
 
 export release_repo="SirRGB/releases"
 
-export timezone="UTC"
+export timezone="CEST"
 
 export sign="true"
 export local_manifest_priv_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/priv/certs.xml"
