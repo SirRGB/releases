@@ -16,7 +16,7 @@ export bacon="bacon"
 export buildtype="user"
 export clean="installclean"
 export generate_incremental="false"
-export upload_recovery="false"
+export upload_recovery="true"
 
 export ccache="false"
 export ccache_size=""
