@@ -3,12 +3,12 @@
 export GITHUB_USER="SirRGB"
 export GITHUB_EMAIL="sirrgb@proton.me"
 
-export device="griffin"
+export device="addison"
 
 export ROM="Lineage OS"
 export ROM_DIR="${WORKSPACE}/../Los11"
 export ROM_VERSION="18.1"
-export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/griffin/A11Lineage2.xml"
+export local_manifest_url="https://raw.githubusercontent.com/SirRGB/local_manifests/main/addison/A11Lineage2.xml"
 export manifest_url="https://github.com/LineageOS-Revived/android"
 export rom_vendor_name="lineage"
 export branch="lineage-18.1"
