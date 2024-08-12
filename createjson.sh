@@ -6,7 +6,7 @@
 CR_VERSION="${ROM_VERSION}"
 
 date="$(date +"%Y%m%d")"
-maintainer="Keerthi Teja (xTeja)/SirRGB" #ex: Lup Gabriel (gwolfu)
+maintainer="SirRGB" #ex: Lup Gabriel (gwolfu)
 oem="OnePlus" #ex: OnePlus
 device="dumpling" #ex: guacamole
 devicename="OnePlus 5t" #ex: OnePlus 7 Pro
@@ -14,11 +14,11 @@ zip="${zip_name}" #ex: crDroidAndroid-<android version>-<date>-<device codename>
 buildtype="Monthly" #choose from Testing/Alpha/Beta/Weekly/Monthly
 forum="https://t.me/OP5T_flos_crdroid_updates" #https link (mandatory)
 gapps="" #https link (leave empty if unused)
-firmware="https://sourceforge.net/projects/crdroid/files/dumpling/6.x/firmware/firmware_10.0.1_oneplus5T.zip/download" #https link (leave empty if unused)
+firmware="https://sourceforge.net/projects/lineageos-cheeseburger/files/firmware/dumpling/firmware_10.0.1_dumpling.zip/download" #https link (leave empty if unused)
 modem="" #https link (leave empty if unused)
 bootloader="" #https link (leave empty if unused)
 recovery="" #https link (leave empty if unused)
-paypal="https://paypal.me/xKeerthiTeja" #https link (leave empty if unused)
+paypal="https://www.paypal.com/donate/?hosted_button_id=9C79NMF2T3366" #https link (leave empty if unused)
 telegram="https://t.me/OP5T_flos_crdroid_updates" #https link (leave empty if unused)
 
 #don't modify from here
@@ -48,7 +48,7 @@ echo '{
         "oem": "'$oem'",
         "device": "'$devicename'",
         "filename": "'$zip_only'",
-        "download": "https://sourceforge.net/projects/sirrgb-roms/files/Dumpling/CrDroid/'$zip_only'/download",
+        "download": "https://github.com/${release_repo}/releases/tag/${tag}",
         "timestamp": '$timestamp',
         "md5": "'$md5'",
         "size": '$size',
