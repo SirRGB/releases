@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 export GITHUB_USER="SirRGB"
@@ -13,7 +14,7 @@ export manifest_url="https://github.com/LineageOS-Revived/android"
 export rom_vendor_name="lineage"
 export branch="lineage-18.1"
 export bacon="bacon"
-export buildtype="user"
+export buildtype="userdebug"
 export clean="installclean"
 export generate_incremental="false"
 export upload_recovery="true"
