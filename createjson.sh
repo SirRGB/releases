@@ -39,6 +39,7 @@ version=`echo "$zip_only" | cut -d'-' -f5`
 v_max=`echo "$version" | cut -d'.' -f1 | cut -d'v' -f2`
 v_min=`echo "$version" | cut -d'.' -f2`
 version=`echo $v_max.$v_min`
+download=`echo https://github.com/${release_repo}/releases/tag/${tag}`
 
 echo ""
 echo '{
@@ -48,7 +49,7 @@ echo '{
         "oem": "'$oem'",
         "device": "'$devicename'",
         "filename": "'$zip_only'",
-        "download": "https://github.com/${release_repo}/releases/tag/${tag}",
+        "download": "'$download'",
         "timestamp": '$timestamp',
         "md5": "'$md5'",
         "size": '$size',
